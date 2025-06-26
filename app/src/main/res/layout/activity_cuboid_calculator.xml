@@ -7,25 +7,45 @@
     android:padding="24dp"
     tools:context="com.example.myintentapp.CuboidCalculatorActivity">
 
+    <!-- Title -->
+
+    <!-- Label Panjang -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Kalkulator Balok"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_length"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/length"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
 
+    <!-- Input Panjang -->
     <EditText
         android:id="@+id/edt_length"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:hint="Masukkan Panjang"
         android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/tv_length"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_length" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
 
+    <!-- Label Lebar -->
     <TextView
         android:id="@+id/tv_width"
         android:layout_width="wrap_content"
@@ -35,16 +55,19 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp" />
 
+    <!-- Input Lebar -->
     <EditText
         android:id="@+id/edt_width"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:hint="Masukkan Lebar"
         android:inputType="numberDecimal"
         app:layout_constraintTop_toBottomOf="@id/tv_width"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
+    <!-- Label Tinggi -->
     <TextView
         android:id="@+id/tv_height"
         android:layout_width="wrap_content"
@@ -54,16 +77,19 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp" />
 
+    <!-- Input Tinggi -->
     <EditText
         android:id="@+id/edt_height"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:hint="Masukkan Tinggi"
         android:inputType="numberDecimal"
         app:layout_constraintTop_toBottomOf="@id/tv_height"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
+    <!-- Tombol Hitung -->
     <Button
         android:id="@+id/btn_calculate"
         android:layout_width="wrap_content"
@@ -74,6 +100,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
 
+    <!-- Hasil -->
     <TextView
         android:id="@+id/Result"
         android:layout_width="wrap_content"
