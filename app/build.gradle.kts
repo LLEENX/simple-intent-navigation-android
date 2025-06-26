@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.MyIntentApp"
+    namespace = "com.example.myintentapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.MyIntentApp"
+        applicationId = "com.example.myintentapp"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
