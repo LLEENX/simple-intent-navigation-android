@@ -107,7 +107,6 @@
         android:layout_height="wrap_content"
         android:text="@string/result"
         android:textSize="18sp"
-        android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/btn_calculate"
         app:layout_constraintStart_toStartOf="parent"
