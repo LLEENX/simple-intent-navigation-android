@@ -9,20 +9,34 @@
     tools:context="com.example.myintentapp.MainActivity">
 
 
+    <ImageButton
+        android:id="@+id/btnToggleTheme"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Toggle Night Mode"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nightmode_icon"
+        android:tint="?attr/colorControlNormal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="85dp"
-        android:text="Navigasi Aktivitas dan Aplikasi"
+        android:layout_marginTop="32dp"
+        android:text="Aplikasi Navigasi Aktivitas"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/btnToggleTheme" />
 
     <Button
         android:id="@+id/btnCalculator"
@@ -78,6 +92,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btndiall_number" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
