@@ -7,21 +7,31 @@
     <string name="result">Hasil</string>
     <string name="title_activity_view_group">ViewGroup</string>
 
-    <string name="content_text">Google officially announced its much-anticipated Pixel phones; the Pixel
-and Pixel XL, on October 4. We attended Google’s London UK event, mirroring the main one taking place in
-San Francisco, US, where the firm unwrapped the new Android 7.1 Nougat devices which will apparently
-usurp Google’s long-standing Nexus series.</string>
-    <string name="content_specs_display">5.0 inches\n
-    FHD AMOLED at 441ppi\n
-    2.5D Corning® Gorilla® Glass 4</string>
-    <string name="content_specs_size">5.6 x 2.7 x 0.2 ~ 0.3 inches 143.8 x 69.5 x 7.3 ~ 8.5 mm</string>
-    <string name="content_specs_battery">2,770 mAh battery\n
-    Standby time (LTE): up to 19 days\n
-    Talk time (3g/WCDMA): up to 26 hours\n
-    Internet use time (Wi-Fi): up to 13 hours\n
-    Internet use time (LTE): up to 13 hours\n
-    Video playback: up to 13 hours\n
-    Audio playback (via headset): up to 110 hours\n
-    Fast charging: up to 7 hours of use from only 15 minutes of charging</string>
+    <!-- Profile Umpo  -->
+    <string name="umpo_deskripsi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ut!</string>
+
+    <string name="umpo_vision_title">Visi</string>
+    <string name="umpo_vision">Menjadi universitas yang unggul dalam penguasaan ilmu pengetahuan, teknologi, dan seni berdasarkan nilai-nilai Islami.</string>
+
+    <string name="umpo_mission_title">Misi</string>
+    <string name="umpo_mission">
+        1. Menyelenggarakan pendidikan akademik, profesi, dan vokasi yang berkualitas berdasarkan nilai-nilai Islam;\n
+        2. Menyelenggarakan penelitian dan pengabdian kepada masyarakat yang berkualitas berdasarkan nilai-nilai Islam;\n
+        3. Menyelenggarakan pengelolaan institusi yang amanah dan bertumpu pada sistem penjaminan mutu;\n
+        4. Menyelenggarakan pembinaan dan pengembangan sivitas akademika dalam kehidupan yang Islami;\n
+        5. Menyelenggarakan kerjasama dengan pihak lain yang saling menguntungkan dan dapat dipertanggungjawabkan.
+    </string>
+
+    <string name="umpo_goal_title">Tujuan</string>
+    <string name="umpo_goal">
+        1. Menghasilkan lulusan yang memiliki kemampuan akademik, profesi, dan vokasi yang unggul dalam bidang ipteks berdasarkan nilai-nilai Islam;\n
+        2. Menghasilkan lulusan yang berdaya saing nasional dalam bidang ipteks berdasarkan nilai-nilai Islam;\n
+        3. Menghasilkan karya penelitian yang berkualitas dalam bidang ipteks berdasarkan nilai-nilai Islam;\n
+        4. Menghasilkan karya pengabdian kepada masyarakat yang berkualitas dalam bidang ipteks berdasarkan nilai-nilai Islam;\n
+        5. Mewujudkan tata kelola institusi yang amanah dan bertumpu pada sistem penjaminan mutu;\n
+        6. Mewujudkan kultur kehidupan Islami pada seluruh sivitas akademika;\n
+        7. Menghasilkan kerjasama dan jaringan kerja dengan pihak lain yang saling menguntungkan dan dapat dipertanggungjawabkan.
+    </string>
+
 
 </resources>

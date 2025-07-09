@@ -37,6 +37,8 @@
             android:name=".CuboidCalculatorActivity"
             android:exported="false" />
 
+        <activity android:name=".ProfileUmpoActivity" />
+
     </application>
 
 </manifest>
