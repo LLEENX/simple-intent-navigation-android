@@ -1,4 +1,4 @@
-```
+```python
 # Ambil harga terakhir aktual
 last_actual_date = close_prices.index[-1]
 last_actual_price = float(close_prices.iloc[-1]['Close'])  # pastikan float
