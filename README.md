@@ -1,23 +1,23 @@
 ```python
-# Ambil harga terakhir aktual
-last_actual_date = close_prices.index[-1]
-last_actual_price = float(close_prices.iloc[-1]['Close'])  # pastikan float
+# Siapkan data untuk Prophet
+prophet_df = close_prices.reset_index()[['Date', 'Close']]
+prophet_df.columns = ['ds', 'y']  # Prophet butuh kolom 'ds' untuk tanggal dan 'y' untuk nilai
 
-# Ambil 10 prediksi terakhir Prophet
-prophet_pred = forecast.set_index('ds')['yhat'].tail(10)
+# Buat model dan latih
+prophet_model = Prophet(daily_seasonality=True)
+prophet_model.fit(prophet_df)
 
-# Gabungkan prediksi Prophet dengan titik akhir aktual
-prophet_combined_dates = [last_actual_date] + list(prophet_pred.index)
-prophet_combined_values = [last_actual_price] + [float(val) for val in prophet_pred.values]
+# Buat dataframe tanggal untuk 10 hari ke depan
+future_dates = prophet_model.make_future_dataframe(periods=10)
 
-# Plot
-plt.figure(figsize=(12,6))
-plt.plot(close_prices[-100:], label='Aktual (100 Hari Terakhir)', color='blue')
-plt.plot(prophet_combined_dates, prophet_combined_values, label='Prediksi Prophet', color='green', linestyle='--')
-plt.title('Perbandingan Prediksi LSTM vs Prophet (10 Hari ke Depan)')
+# Lakukan prediksi
+forecast = prophet_model.predict(future_dates)
+
+# Visualisasikan hasil forecast
+fig1 = prophet_model.plot(forecast)
+plt.title('Prediksi Harga Saham UNVR Menggunakan Prophet')
 plt.xlabel('Tanggal')
 plt.ylabel('Harga (IDR)')
-plt.legend()
 plt.grid(True)
 plt.show()
 ```
